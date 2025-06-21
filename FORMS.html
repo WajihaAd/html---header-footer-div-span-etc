@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News Report</title>
+</head>
+<body>
+
+<main>
+  <h1>Forms</h1>
+<!--  <h2>For the form</h2>-->
+  <form action="/submit.php" method="post" >
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter Name" required >
+    </div>
+
+<!--    now for phone-->
+    <div>
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" placeholder="03XX-XXXXX"
+         pattern="[0-9]{4}-[0-9]{7}" required>
+</div>
+    <!-- Email Field -->
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+  </div>
+
+  <!-- Date of Birth Field -->
+  <div>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+  </div>
+
+<div>
+<!--  radio make sure one is selected-->
+  <label>Gender (Radio - Horizontal):</label><br>
+
+  <input type="radio" id="male" name="gender_radio" value="Male" required>
+  <label for="male">Male</label>
+
+  <input type="radio" id="female" name="gender_radio" value="Female">
+  <label for="female">Female</label>
+
+  <input type="radio" id="other" name="gender_radio" value="Other">
+  <label for="other">Other</label>
+</div>
+<!--&lt;!&ndash;as Checkboxes (Horizontal) &ndash;&gt;&ndash;&gt; the problem is that all otpion are selected-->
+
+   <div>
+  <input type="checkbox" id="agree" name="agree" required>
+  <label for="agree">I agree to the terms and conditions</label>
+</div>
+
+<div>
+  <label for="comments">Your Comments:</label><br>
+  <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Write your comments here..." required></textarea>
+</div>
+
+  <!-- Gender as Dropdown -->
+  <div>
+    <label for="gender_select">Gender (Dropdown):</label>
+    <select id="gender_select" name="gender_select">
+      <option value="" disabled selected>--Select Gender--</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+      <option value="Prefer not to say">Prefer not to say</option>
+    </select>
+  </div>
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+
+    <h2>For </h2>
+  </form>
+</main>
+</body>
+</html>
