@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+<!--    This is used to link exteral files to html page-->
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+<style>
+
+</style>
+   <header>
+       <div>
+       <H1>Login Page</H1>
+       </div>
+   </header>
+
+   <main>
+
+        <form action = "/submit.html" method = "post" target = "_blank" autocomplete="off"
+              name="Login-Page">
+
+            <section>
+            <p>
+            Required fields are followed by
+            <strong><span aria-label="required">*</span></strong>.
+            </p>
+
+            <div>
+           <label for="name">Name:<span aria-label="required">*</span></label>
+            <input type="text" id="name" name="user_name"  autocomplete="off"
+                   placeholder="Enter Name" required >
+            </div>
+                <br>
+            <div>
+            <label for = "mail" > Email: <span aria-label="required">*</span></label>
+                <input type = "email" id = "mail" name= "email_id" autocomplete = "off"
+                       placeholder = "fishy@gmail.com" required>
+            </div>
+                <br>
+            <div>
+                <label for = "pwd">Password: <span aria-label="required">*</span></label>
+                <input type = "password" id = "pwd" name ="password_imp" autocomplete = "off"
+                placeholder = "Password" required>
+
+            </div>
+
+                </section>
+            <aside>
+                 <div>
+                    <button type="submit">Submit</button>
+                 </div>
+            </aside>
+        </form>
+
+   </main>
+
+
+
+   <footer>
+        <script src="script.js" ></script> <!-- JavaScript file -->
+   </footer>
+
+
+</body>
+</html>
